@@ -2,7 +2,8 @@ import './App.css';
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 
-const API_URL = 'http://localhost:5000/api';
+// Use your actual Render backend URL here:
+const API_URL = 'https://your-backend.onrender.com/api';
 
 function App() {
   const [users, setUsers] = useState([]);
@@ -19,7 +20,6 @@ function App() {
   const [authPassword, setAuthPassword] = useState('');
   const [authError, setAuthError] = useState('');
 
-  // Fetch users, attendance records, and report
   useEffect(() => {
     if (isLoggedIn) {
       axios.get(`${API_URL}/users`, { withCredentials: true }).then(res => setUsers(res.data));

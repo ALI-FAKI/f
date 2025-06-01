@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 
 // Use your actual Render backend URL here:
-const API_URL = 'https://b-2-jeh4.onrender.com';
+const API_URL = 'https://s-4-qv3p.onrender.com';
 
 function App() {
   const [users, setUsers] = useState([]);

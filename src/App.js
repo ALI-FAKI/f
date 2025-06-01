@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 
 // Use your actual Render backend URL here:
-const API_URL = 'postgresql://attendance_db_zkog_user:WD983v48G2HvmGTsarzzXkzV9rw1p2tx@dpg-d0tni8m3jp1c73eq2v60-a/attendance_db_zkog';
+const API_URL = 'https://s-4-qv3p.onrender.com';
 
 function App() {
   const [users, setUsers] = useState([]);
